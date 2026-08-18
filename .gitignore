@@ -1,0 +1,33 @@
+# Environment files
+.env
+.env.*
+!.env.dist
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Project runtime data
+src/tokens.json
+src/chatbot/TwitchIRC.py
+
+# Build and packaging output
+build/
+dist/
+*.spec
+*.exe
+
+# Editor and OS files
+.vscode/
+Thumbs.db
+Desktop.ini
