@@ -37,6 +37,7 @@ class TwitchSocket:
         self.spotify_api = SpotifyApi(tokenManager)
 
         self.user_added_music = {}
+        self.keepalive_count = 0
 
     def send_chat_message(self, text):
         payload = {
@@ -90,8 +91,9 @@ class TwitchSocket:
 
                 elif message_type == "session_keepalive":
 
-                    print("Keepalive")
-
+                    self.keepalive_count += 1
+                    print(f"\rKeepalive ({self.keepalive_count})\r", end="", flush=True)
+                    
                 elif message_type == "notification":
 
 
