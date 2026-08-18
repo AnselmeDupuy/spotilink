@@ -30,18 +30,20 @@ pip install -r requirements.txt
 
 Each account has its own authentication entry point:
 
+use the batch file for each authentication:
+
 ```bash
-python -m src.auth.SpotifyAuth
-python -m src.auth.TwitchAuth
-python -m src.auth.TwitchBotAuth
+authSpotify.bat
+authTwitch.bat
+authTwitchBot.bat
 ```
 
-The bot account is optional. If you use `TwitchAuth` and `TwitchBotAuth`, remember that they are two different accounts, so you must be connected to the account you want to authenticate before running each command.
+The bot account is optional. If you use `authTwitch.bat` and `authTwitchBot.bat`, remember that they are two different accounts, so you must be connected to the account you want to authenticate before running each command.
 
 6. Start the app with the batch file:
 
 ```bat
-PyVenv.bat
+start.bat
 ```
 
 `PyVenv.bat` activates the virtual environment and launches `python -m src.main` for you.
