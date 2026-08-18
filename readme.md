@@ -2,16 +2,14 @@
 
 ## Requirements
 
-- Python 3.13 or later (https://www.python.org)
+- Python 3.13 or later from https://www.python.org
 - The built-in `venv` module, which normally ships with Python
 
 ## Quick Start
 
 1. Download the git repo.
 
-2. Create and activate a virtual environment:
-
-at the root of the downloaded folder:
+2. Create a virtual environment at the root of the project:
 
 ```bash
 python -m venv .venv
@@ -40,11 +38,13 @@ python -m src.auth.TwitchBotAuth
 
 The bot account is optional. If you use `TwitchAuth` and `TwitchBotAuth`, remember that they are two different accounts, so you must be connected to the account you want to authenticate before running each command.
 
-6. Start the project:
+6. Start the app with the batch file:
 
-```bash
-python -m src.main
+```bat
+PyVenv.bat
 ```
+
+`PyVenv.bat` activates the virtual environment and launches `python -m src.main` for you.
 
 ## Notes
 
