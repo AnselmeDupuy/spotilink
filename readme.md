@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Python 3.13 or later
+- Python 3.13 or later (https://www.python.org)
 - The built-in `venv` module, which normally ships with Python
 
 ## Quick Start
